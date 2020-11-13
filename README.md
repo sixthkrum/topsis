@@ -8,7 +8,7 @@ from topsis import csvTopsis
 
 <h3> From the command line: </h3>
 
-csvTopsis <//filename> <//weights> <//impacts> {options: delimiter(,)}
+csvTopsis (filename) (weights) (impacts) {options: delimiter(,)}
 
     filename is the name of the csv file which has the dataset
         
@@ -40,7 +40,7 @@ csvTopsis.topsis(inputCSV, weights, impacts, delimiter = ',')
 
     arguments:
 
-        inputCSV is a stream containing the dataset, it must have at least 3 columns and the parameter columns must have only numeric values. The first column is assumed to contain column names and the first row is assumed to contain row names
+        inputCSV is a stream containing the dataset, it must have at least 3 columns and the parameter columns must have only numeric values. The first column is assumed to contain row names and the first row is assumed to contain column names
         
         weights is a list with weights for the parameters in the dataset. The list must be numeric and have a size equal to the number of parameters in the dataset
         
